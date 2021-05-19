@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Contacts Page</h1>
-    <h1>{{name}} {{email}}</h1>
+    {% for object in list %}
+    <p>{{object.name}} {{object.email}}</p>
+    {% endfor %}
     <a href="{% url 'home' %}">Home</a>
     
 </body>
